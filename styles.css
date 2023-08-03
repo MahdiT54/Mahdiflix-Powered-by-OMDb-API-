@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.red {
+  color: #dc1b28;
+}
+
+/* 
+
+NAV
+
+*/
+
+nav {
+  background-color: #1d1d1d;
+  border-bottom: 1px solid #292929;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav__logo {
+  height: 48px;
+  width: 160px;
+}
+
+.nav__links {
+  display: flex;
+}
+
+.nav__link {
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+  transition: all 0.2s ease;
+}
+
+/* 
+
+HEADER
+
+*/
+
+header {
+  min-height: calc(100vh - 100px);
+  background-color: #171717;
+}
+
+.header__container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.header__content--h1 {
+  color: white;
+  margin-bottom: 12px;
+}
+
+#landing__page {
+  min-height: 100vh;
+}
+
+.header__image--container {
+  margin: 24px 0;
+}
+
+.header__image--wrapper {
+  padding: 0 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__image {
+  width: 500px;
+  height: 300px;
+}
+
+.browser__engine {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+#search__list {
+  color: rgba(0, 0, 0, 0.87);
+  width: 100%;
+  max-width: 800px;
+  height: 60px;
+  padding-left: 20px;
+  font-size: 24px;
+  border: none;
+}
+
+#api-button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10000;
+  padding: 0 20px 0 8px;
+  color: #6030b1;
+  font-size: 32px;
+  transition: all 0.2s ease;
+}
+
+#api-button:hover,
+.nav__link:hover {
+  color: #ff328f;
+}
+
+/* 
+
+MOVIES
+
+*/
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-card {
+  width: calc(100% / 3);
+  cursor: pointer;
+  transition: background-color 200ms ease;
+}
+
+.movie-list .movie-card:hover {
+  background-color: #292929;
+}
+
+.movie-card__container {
+  padding: 12px;
+}
+
+.movie-poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-item-thumbnail {
+  width: 150px;
+  height: 225px;
+}
+
+.search-item-img {
+  width: 100%;
+  height: 100%;
+}
+
+.search-item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-item-h3 {
+  margin: 4px;
+}
+
+.search-item-h3,
+.search-item-p {
+  text-align: center;
+  color: white;
+}
+
+/* 
+
+moviepage
+
+*/
+
+#movie__page {
+  background-color: #171717;
+  min-height: calc(100vh - 100px);
+}
+
+.movie-poster img {
+  max-width: 300px;
+  margin: 0 auto;
+  border: 4px solid #fff;
+}
+
+.movie-info {
+  text-align: center;
+  color: #fff;
+  padding-top: 3rem;
+}
+
+/* movie info stylings */
+.movie-title {
+  font-size: 2rem;
+  color: #dc1a28;
+}
+
+.movie-misc-info {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.movie-info .year {
+  font-weight: 500;
+}
+
+.movie-info .rated {
+  background-color: var(#dc1a28);
+  padding: 0.4rem;
+  margin: 0 0.4rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.movie-info .released {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.movie-info .writer {
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.movie-info .genre {
+  background-color: var(#292929);
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.movie-info .plot {
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+.movie-info .language {
+  color: var(#dc1a28);
+  font-style: italic;
+}
+
+.movie-info .awards {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.movie-info .awards i {
+  color: #dc1a28;
+  margin: 1rem 0.7rem 0 0;
+}
+
+.loading,
+.error,
+.no-results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  font-size: 60px;
+  color: #dc1a28;
+}
+
+.fa-spinner {
+  animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 
+
+LOADING
+STATE
+
+*/
