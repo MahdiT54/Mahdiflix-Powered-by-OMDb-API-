@@ -2,7 +2,7 @@ const postListEl = document.querySelector(".movie-list");
 const id = localStorage.getItem("imdbID");
 
 async function renderPosts() {
-  const post = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=1c44ead`);
+  const post = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=1c44ead`);
   const postData = await post.json();
   console.log(postData);
   postListEl.innerHTML = postHTML(postData); // Set the HTML directly, as it's a single movie
