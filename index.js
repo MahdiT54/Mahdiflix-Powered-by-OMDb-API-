@@ -42,8 +42,9 @@ function findMovies() {
 
 function showMovieInfo(id) {
   localStorage.setItem("imdbID", id);
-  window.location.href = `${window.location.origin}/moviepage.html`;
+  window.location.href = `./moviepage.html`;
 }
+// ${window.location.origin}/moviepage.html
 
 function movieHTML(movie) {
   return `
